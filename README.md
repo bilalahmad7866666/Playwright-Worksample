@@ -28,14 +28,6 @@ This project contains Playwright test cases for the general functionality of the
    - *Assertions*:
      - Confirm that the content is visible.
 
-4. **Check Chatbot Functionality**
-   - *Objective*: Verify the functionality of the contact form.
-   - *Steps*:
-     1. Navigate to the Help Center.
-     2. Verify funtionality of the chatbot.
-   - *Assertions*:
-     - Confirm that chatbot funtionalities work fine.
-
 
 ## How to Run Tests
 
