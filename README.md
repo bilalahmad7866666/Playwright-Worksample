@@ -1,6 +1,6 @@
 # Bunch Help Center Tests on Playwright
 
-This project contains Playwright test cases for the general functionality of the Bunch Capital Help Center. These are the most basic funtionalities you can check in a website, therefore being in learning process of Playwright, I chose these test cases.
+This project contains Playwright test cases for the general functionality of the Bunch Capital Help Center. These are the most basic funtionalities you can check in a website, and can only be considered as a basic work sample.
 
 ## Test Cases
 
