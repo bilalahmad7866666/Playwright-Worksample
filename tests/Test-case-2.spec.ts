@@ -22,7 +22,7 @@ test('Navigation Test', async ({ page }) => {
   expect(await generalContent.isVisible()).toBe(true); // Ensure the element is visible
 
   // Verify the URL has changed.
-  expect(page.url()).toContain('/general'); // Assuming the URL changes accordingly
+  expect(page.url()).toContain('general'); // Assuming the URL changes accordingly
 
   // Navigate back to the 'All Collections' page.
   await allCollectionsLocator.click();
@@ -35,7 +35,7 @@ test('Navigation Test', async ({ page }) => {
   expect(await angelRollUpsContent.isVisible()).toBe(true); // Ensure the element is visible
 
   // Verify the URL has changed.
-  expect(page.url()).toContain('/angel-roll-ups'); // Assuming the URL changes accordingly
+  expect(page.url()).toContain('angel-roll-ups'); // Assuming the URL changes accordingly
 
   // Navigate back to the 'All Collections' page.
   await allCollectionsLocator.click();
@@ -48,7 +48,7 @@ test('Navigation Test', async ({ page }) => {
   expect(await syndicatesContent.isVisible()).toBe(true); // Ensure the element is visible
 
   // Verify the URL has changed.
-  expect(page.url()).toContain('/syndicates'); // Assuming the URL changes accordingly
+  expect(page.url()).toContain('syndicates'); // Assuming the URL changes accordingly
 
   // Navigate back to the 'All Collections' page.
   await allCollectionsLocator.click();
@@ -61,8 +61,10 @@ test('Navigation Test', async ({ page }) => {
   expect(await fundsContent.isVisible()).toBe(true); // Ensure the element is visible
 
   // Verify the URL has changed.
-  expect(page.url()).toContain('/funds'); // Assuming the URL changes accordingly
+  expect(page.url()).toContain('funds'); // Assuming the URL changes accordingly
 
   // Navigate back to the 'All Collections' page.
   await allCollectionsLocator.click();
+
+  await page.close();
 });

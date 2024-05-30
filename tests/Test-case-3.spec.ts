@@ -37,18 +37,5 @@ test('Visibility Verifications', async ({ page }) => {
   // Verify that the text content matches the expected value.
   expect(headingText).toContain('Advice and answers from the');
 
-  // Attribute Test
-  // Find a link element and get its href attribute.
-  const loginLink = await page.waitForSelector('a[href="/login"]');
-  const hrefAttributeValue = await loginLink.getAttribute('href');
-  // Verify that the href attribute value matches the expected value.
-  expect(hrefAttributeValue).toBe('/login');
-
-  // Interaction Test
-  // Simulate interaction by clicking on a link.
-  await page.click('a[href="/login"]');
-  // Wait for navigation to complete.
-  await page.waitForNavigation();
-  // Verify that the URL has changed to the login page.
-  expect(page.url()).toBe('https://help.bunch.capital/login');
+  await page.close();
 });

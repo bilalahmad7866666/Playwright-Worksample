@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { isContext } from 'vm';
 
 test('Search Functionality', async ({ page }) => {
 
@@ -43,4 +44,5 @@ const newPageContentSelector = '#__next > div > main > div > section > section >
 
   // Assert that the content of the new page is visible.
   expect(newPageContent).not.toBeNull();
+  await page.close();
 });
